@@ -1,0 +1,80 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm / VSCode / Colab
+.idea/
+.vscode/
+*.code-workspace
+
+# Streamlit cache
+.streamlit/
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# FAISS index and model artifacts
+*.npy
+*.pkl
+*.pt
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Exports and CSVs
+*.csv
+*.xlsx
+
+# PDFs and reports
+*.pdf
+
+# Ngrok token / credentials
+ngrok.yml
+token.txt
+
+# Ignore large model or data folders
+data/
+models/

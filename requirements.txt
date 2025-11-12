@@ -1,0 +1,18 @@
+# Core environment
+flask==3.0.3
+streamlit==1.40.1
+requests==2.32.3
+beautifulsoup4==4.12.3
+sentence-transformers==3.1.1
+numpy==1.26.4
+pandas==2.2.3
+
+# FAISS (CPU-based)
+faiss-cpu==1.8.0.post1
+
+# Optional utilities
+scikit-learn==1.5.2
+tqdm==4.66.5
+
+# For PDF generation (used for final report)
+fpdf==1.7.2
