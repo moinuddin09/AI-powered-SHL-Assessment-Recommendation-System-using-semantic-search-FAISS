@@ -4,12 +4,14 @@ import traceback
 from functools import lru_cache
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 import pickle
 import faiss
 from sentence_transformers import SentenceTransformer
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("shl-recommender")
 
@@ -153,10 +155,6 @@ if __name__ == "__main__":
     try:
         load_artifacts()
     except Exception as e:
-        logger.error("Artifact loading failed: %s", e)
-        raise
-    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
-xcept Exception as e:
         logger.error("Artifact loading failed: %s", e)
         raise
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
